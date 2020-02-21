@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Unit 5. Циклы в JavaScript (часть 1)</h1>
+        <h2>Циклы в JavaScript (часть 1)</h2>
+
+        <section>
+            <p><b>Task 1.</b> Выведите в консоль с помощью цикла числа от 1 до 10.</p>
+            <p>Вывод в консоль</p>
+        </section>
+
+        <section>
+            <p><b>Task 2.</b> Выведите на страницу с помощью цикла числа от 1 до 10.</p>
+
+            <div id="out"></div>
+        </section>
+
+        <section>
+            <p><b>Task 3.</b> Выведите на страницу с помощью цикла числа в диапазоне от 10 до 0.</p>
+
+            <div id="out2"></div>
+
+        </section>
+
+        <section>
+            <p><b>Task 4.</b> Выведите на страницу с помощью цикла числа в диапазоне от 0 до 10 с шагом 2.</p>
+
+            <div id="out3"></div>
+
+        </section>
+
+        <section>
+            <p><b>Task 5.</b> Выведите на страницу с помощью цикла числа в диапазоне от 21 до 0 с шагом 3.</p>
+
+            <div id="out4"></div>
+        </section>
+
+        <section>
+            <p><b>Task 6.</b> Используя строку ****** - нарисуйте квадрат 6х6 и выведите его на страницу.</p>
+
+            <div id="out5"></div>
+
+        </section>
+
+        <section>
+            <p><b>Task 7.</b> Создайте input, button. По клику на кнопку выведите на страницу все числа, начиная от
+                введенного пользователем в input до нуля.</p>
+
+            <input class="inp" type="number">
+            <button class="btn">Получить</button>
+            <span class="res"></span>
+        </section>
+
+        <section>
+            <p><b>Task 8.</b> Создайте input,input, button. По клику на кнопку выведите на страницу все числа, в
+                диапазоне введенных пользователем чисел. Считаем что второе число всегда больше первого.</p>
+
+            <input class="inp2" type="number" name="inp2">
+            <input class="inp3" type="number" name="inp3">
+            <button class="btn1">Получить</button>
+            <span class="res1"></span>
+        </section>
+
+        <section>
+            <p><b>Task 9.</b> Доработайте предыдущую задачу. Добавьте проверку введенных чисел, если второе число больше
+                первого - то делаем вывод, если нет - выводим alert о ошибке.</p>
+
+            <input class="inp4" type="number" name="inp4">
+            <input class="inp5" type="number" name="inp5">
+            <button class="btn2">Получить</button>
+            <span class="res2"></span>
+
+        </section>
+
+        <section>
+            <p><b>Task 10.</b> Выведите на страницу все четные годы в промежутке от 1901 до 1950.</p>
+
+            <span class="res4"></span>
+
+        </section>
+
+        <section>
+            <p><b>Task 11.</b> Создайте несколько div.one. С помощью length выведите количество div.one на странице.
+
+            </p>
+
+            <div class="one"></div>
+            <div class="one"></div>
+            <div class="one"></div>
+
+            <span class="res5"></span>
+
+        </section>
+
+        <section>
+            <p><b>Task 12.</b> Создайте кнопку, при нажатии на которую запускается функция. Функция окрашивает все
+                div.one в оранжевый цвет.</p>
+
+            <div class="one2">color</div>
+            <div class="one2">color</div>
+            <div class="one2">color</div>
+            <button class="btn3">Окрасить</button>
+
+        </section>
+
+        <section>
+            <p><b>Task 13.</b> Создайте кнопку, при нажатии на которую запускается функция. Функция выводит в консоль
+                содержимое всех div.one.</p>
+
+            <div class="one3">Content-1</div>
+            <div class="one3">Content-2</div>
+            <div class="one3">Content-3</div>
+            <button class="btn4">Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 14.</b> Создайте кнопку, при нажатии на которую запускается функция. Функция для всех
+                input[type="text"] устанавливает свойство placeholder = 'Введите данные'</p>
+
+            <button class="btn5">Получить</button>
+            <input type="text" name="inp6" id="" placeholder="">
+            <input type="text" name="inp6" id="" placeholder="">
+            <input type="text" name="inp6" id="" placeholder="">
+        </section>
+
+        <section>
+            <p><b>Task 15.</b> Создайте кнопку, при нажатии на которую запускается функция. Функция выводит в консоль
+                количество input[type="text"]</p>
+
+            <button class="btn6">Получить</button>
+            <input class="inp7" type="text" name="inp7" id="inp7">
+            <input class="inp7" type="text" name="inp7" id="inp7">
+            <input class="inp7" type="text" name="inp7" id="inp7">
+
+        </section>
+
+        <section>
+            <p><b>Task 16.</b> Создайте три связанных radiobutton[name="p1"]. Задайте им value. При нажатии на кнопку
+                выводите на страницу value выбранного.</p>
+
+            <input type="radio" name="p1" value="radio-1">
+            <input type="radio" name="p1" value="radio-2">
+            <input type="radio" name="p1" value="radio-3">
+
+            <button class="btn7">Получить</button>
+
+            <h2 class="res6"></h2>
+        </section>
+
+        <section>
+            <p><b>Task 17.</b> Добавьте кнопку. При нажатии кнопки делайте первый из созданных radiobutton в примере
+                выше - checked.</p>
+
+            <button class="btn8">Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 18.</b> Получите все radiobutton[name="p1"]. C помощью цикла замените в них value. Первому
+                элементу присвойте value = 0, второму value = 1 и т.д.</p>
+
+        </section>
+
+        <section>
+            <p><b>Task 19.</b> Создайте 3 input[radiobutton][name="p2"]. Задайте им value равное 5, 3, 6. Добавьте
+                кнопку при нажатии на котору проверяйте value выбранного элемента. Если оно не равно 6 - выводите false,
+                если равно - true.</p>
+
+            <input type="radio" name="p2" value="5">
+            <input type="radio" name="p2" value="3">
+            <input type="radio" name="p2" value="6">
+
+            <button class="btn9">Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 20.</b> Создайте 3 input[radiobutton][name="p3"]. С помощью цикла добавьте на них событие oninput. При изменении состояния input - выводите в консоль текст "был изменен input"</p>
+
+                <input type="radio" name="p3" id="">
+                <input type="radio" name="p3" id="">
+                <input type="radio" name="p3" id="">
+
+        </section>
+
+
+
+
+
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

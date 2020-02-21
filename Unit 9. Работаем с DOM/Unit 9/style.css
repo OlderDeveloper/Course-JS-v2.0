@@ -1,0 +1,41 @@
+html,
+body {
+    font-family: serif;
+}
+
+body {
+    margin: 20px auto;
+}
+
+.css-1 {
+    background: green;
+}
+
+.css-2 {
+    background: #c0c0c0;
+}
+
+.css-3 {
+    background: yellow;
+}
+
+.css-4 {
+    background: orange;
+}
+
+.css-5 {
+    background: red;
+}
+
+.active {
+    border: 2px solid black;
+}
+
+.u-1 {
+    border: 2px solid black;
+}
+
+.u-3, .u-4, .u-5, .u-9, .out-18 {
+    cursor: pointer;
+}
+

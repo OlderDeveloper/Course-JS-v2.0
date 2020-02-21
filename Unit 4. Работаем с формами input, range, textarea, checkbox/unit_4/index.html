@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Igor Rodichev</title>
+</head>
+
+<body>
+    <div class="containet">
+        <h1>Unit 4. Работаем с формами: input, range, textarea, checkbox...</h1>
+        <h3>Работаем с формами в JavaScript</h3>
+
+        <section>
+            <p><b>Task 1.</b> Создайте button - при нажатии на него выводите alert с номером задачи.</p>
+
+            <button id="btn1">Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 2.</b> Создайте input type=button - при нажатии на него выводите alert с номером задачи.</p>
+
+            <input id="inp" type="button" value="Получить">
+        </section>
+
+        <section>
+            <p><b>Task 3.</b> Создайте p - при нажатии на него выводите alert с номером задачи.</p>
+
+            <p id="paragraph">Щёлкните по документу для запуска обработчика.</p>
+        </section>
+
+        <section>
+            <p><b>Task 4.</b> Создайте input(checkbox) и button - при нажатии на него выводите true если checkbox выбран
+                и false если нет.</p>
+
+            <label><input type="checkbox" id="inp2">Выбрать</label>
+            <button id="btn2">Получить</button>
+
+        </section>
+
+        <section>
+            <p><b>Task 5.</b> Создайте input(checkbox) и button. Добавьте value для checkbox. При нажатии на него
+                выводите value если checkbox выбран и false если нет.</p>
+
+            <label><input type="checkbox" id="inp3" value="77">Выбрать</label>
+            <button id="btn3">Получить</button>
+
+        </section>
+
+        <section>
+            <p><b>Task 6.</b> Создайте input(hidden) и button - при нажатии на него выводите alert с value прописанным в
+                input.</p>
+
+            <input id="inp4" type="hidden" value="77">
+            <button id="btn4">Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 7.</b> Создайте input(password) и button - при нажатии на него выводите alert с value прописанным
+                в input. Выводите в консоль предупреждение, если длина пароля меньше 6 символов.</p>
+
+            <input id="inp5" value="" type="password" placeholder="введите пароль">
+            <button id="btn5">Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 8.</b> Создайте div и кнопку. При нажатии кнопки создавайте внутри div элемент input и кнопку
+                (innerHTML). Добавьте на созданную кнопку событие - при клике выводить alert c содержимым созданного
+                input.</p>
+
+            <div id="inp6"></div>
+            <button id="btn6">Создать</button>
+        </section>
+
+        <section>
+            <p><b>Task 9.</b> Создайте один input(radio) . и button - при нажатии на button выводите alert с value
+                прописанным в активном (если он активен, если нет - то alert - false) radiobutton.</p>
+
+            <input id="inp7" type="radio" value="5">
+            <button id='btn7'>Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 10.</b> Создайте input(color) и button - при нажатии на него окрашивайте div выбранным цветом.
+            </p>
+
+            <input id="inp8" type="color">
+            <button id="btn8">Окрасить</button>
+            <div class="square"></div>
+        </section>
+
+        <section>
+            <p><b>Task 11.</b> Создайте input(color) - два элемента и button - при нажатии на кнопку присвойте цвет из
+                первого input в value второго.</p>
+
+            <input id="inp9" type="color" value="">
+            <input id="inp10" type="color" value="">
+            <button id="btn9">Получить</button>
+        </section>
+
+        <section>
+            <p><b>Task 12.</b> Создайте input(date) и button - при нажатии на кнопку выводите на страницу выбранную
+                дату.</p>
+
+            <input id="inp11" type="date">
+            <button id="btn10">Получить</button>
+            <h2 class="res">.....</h2>
+        </section>
+
+        <section>
+            <p><b>Task 13.</b> Создайте input(range) и button - при нажатии на кнопку выводите на страницу значение из
+                input. Добавьте событие oninput на range и тоже выводите значение на страницу.</p>
+
+            <input id="inp12" type="range">
+            <button id="btn11">Получить</button>
+            <span class="res2">30</span>
+            <span class="res3"></span>
+
+        </section>
+
+        <section>
+            <p><b>Task 14.</b> Создайте text-area и button - при нажатии на кнопку выводите на страницу значение из
+                textarea.</p>
+
+            <textarea name="" id="inp13" cols="30" rows="10"></textarea>
+            <button id="btn12">Получить</button>
+            <h2 class="res4">.....</h2>
+        </section>
+
+        <section>
+            <p><b>Task 15.</b> Создайте text-area, input и button - при нажатии на кнопку выводите текс из input в
+                textarea и на страницу.</p>
+
+            <textarea name="" id="text" cols="30" rows="10"></textarea>
+            <input id="inp15" type="text">
+            <button id="btn13">Получить</button>
+            <h2 class="res5">.....</h2>
+        </section>
+
+        <section>
+            <p><b>Task 16.</b> Создайте select и button - при нажатии на кнопку выводите на страницу value выбраннов в
+                select option</p>
+
+            <label for="phone">Выберите модель:</label>
+            <select id="phone" name="phone">
+                <option value="iphone 6s">iPhone 6S</option>
+                <option value="lumia 950">Lumia 950</option>
+                <option value="nexus 5x">Nexus 5X</option>
+                <option value="galaxy s7">Galaxy S7</option>
+            </select>
+            <button id="btn14">Получить</button>
+            <h2 id="res6"></h2>
+
+        </section>
+
+        <section>
+            <p><b>Task 17.</b> Эту задачу пока не делаем!!!!!</p>
+        </section>
+
+        <section>
+            <p><b>Task 18.</b> Создайте select добавьте на него событие onchange. По данному событию выводите value
+                выбранного option на страницу.</p>
+
+            <label for="phone2">Выберите модель:</label>
+            <select id="phone2" name="phone2">
+                <option value="iphone 6s">iPhone 6S</option>
+                <option value="lumia 950">Lumia 950</option>
+                <option value="nexus 5x">Nexus 5X</option>
+                <option value="galaxy s7">Galaxy S7</option>
+            </select>
+            <h2 id="res7"></h2>
+        </section>
+
+        <section>
+            <p><b>Task 19.</b> Создайте форму. В ней input(text) и input(password) - и кнопку. По нажатию кнопки
+                выводите значение text и password в консоль!.</p>
+            <form action="">
+                <input id="inp16" type="text" placeholder="текст">
+                <input type="password" name="" id="inp17" placeholder="пароль">
+                <button id="btn15">Получить</button>
+                <p>Вывод осуществляется в консоль</p>
+            </form>
+        </section>
+
+        <section>
+            <p><b>Task 20.</b> Создайте форму. В ней input(text) и input(password) - и кнопку. По нажатию кнопки
+                выводите значение text и password в консоль! Используйте form.elements (читать)</p>
+
+            <form id="form" action="">
+                <input id="inp18" type="text" placeholder="текст">
+                <input type="password" name="" id="inp19" placeholder="пароль">
+                <button id="btn16">Получить</button>
+                <p>Вывод осуществляется в консоль</p>
+            </form>
+
+
+
+        </section>
+
+
+
+
+
+    </div><!-- // containet -->
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

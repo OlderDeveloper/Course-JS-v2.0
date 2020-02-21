@@ -1,0 +1,21 @@
+body {
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #424242
+}
+
+.container  {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+.output {
+    text-decoration-line: underline;
+}
